@@ -14,6 +14,7 @@
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
  * @version     2.3.0
+ * @update      Updated by Mark Gaither (mark@arowabove.com)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
