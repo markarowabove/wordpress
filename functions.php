@@ -90,7 +90,7 @@ function update_wc_billing( $fields, $data ) {
         if ( empty( $POST['billing_email'] ) ) {
             $_POST['billing_email'] = $data['billing_email_field'];
         }  
-	    if ( $data['membership_for'] == 'Me' ) {
+	    if ( strcasecmp($data['membership_for'],"myself") == 0 ) {
             if ( empty( $POST['billing_address_1'] ) ) {
                 $_POST['billing_address_1'] = $data['billing_address_1'];
             } 
@@ -111,5 +111,6 @@ function update_wc_billing( $fields, $data ) {
             //} 
 	    }
    }
+   print_r($_POST);
    return $fields;
 } 
